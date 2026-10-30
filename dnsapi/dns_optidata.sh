@@ -1,11 +1,11 @@
 #!/usr/bin/env sh
 # shellcheck disable=SC2034
 dns_optidata_info='Optidata Cloud
-Site: console.optidata.com
+Site: cloud.optidata.com
 Docs: github.com/acmesh-official/acme.sh/wiki/dnsapi2#dns_optidata
 Options:
  OPTIDATA_Token DNS API key. Create a key of kind DNS in the Optidata Console (API Keys); it starts with "ocs_".
- OPTIDATA_Api API base URL. Default "https://console.optidata.com".
+ OPTIDATA_Api API base URL. Default "https://cloud.optidata.com".
  OPTIDATA_Location Location code or UUID of the zone. Only needed when the zone lives outside the account default location and the lookup cannot tell. Optional.
  OPTIDATA_Zone_ID Zone ID. Pins the zone and skips the zone lookup. Optional.
 Issues: github.com/acmesh-official/acme.sh/issues/7241
@@ -24,7 +24,7 @@ Author: Eduardo Langner <https://github.com/optidatacloud>
 # Every response is wrapped in {"success":true,"data":...}; errors are flat
 # {"status_code":<n>,"message":"...","error":"..."}.
 
-OPTIDATA_DEFAULT_API="https://console.optidata.com"
+OPTIDATA_DEFAULT_API="https://cloud.optidata.com"
 OPTIDATA_TTL=120
 OPTIDATA_MAX_ATTEMPTS=3
 
